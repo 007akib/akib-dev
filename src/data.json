@@ -1,0 +1,182 @@
+{
+  "$schema_note": "Structured portfolio data for Akib Ansari, designed to be fed to an AI model (e.g. as a system/context prompt) for tasks like: auto-generating tailored resumes/cover letters, powering a portfolio-site chatbot, or answering recruiter questions about Akib's work. Fields marked 'ACTION_REQUIRED' are placeholders Akib should fill in before use.",
+  "meta": {
+    "name": "Akib Ansari",
+    "title": "AI/ML & Data Analytics Professional",
+    "tagline": "AI/ML & Data Analytics — with applied Performance Marketing and Full-Stack Development",
+    "location": "Dehradun / Delhi NCR, India",
+    "contact": {
+      "phone": "+91-9528673170",
+      "email": "akibak476@gmail.com",
+      "linkedin": "linkedin.com/in/akib-ansari-datasci",
+      "portfolio_site_marketing_track": "akib-ansari-performance-marketer.vercel.app",
+      "portfolio_site_primary": "ACTION_REQUIRED: add primary AI/ML & Data portfolio site URL"
+    },
+    "positioning": "AI/ML Engineer & Data Analyst roles as the primary target, differentiated by applied Generative AI project-building, performance marketing skills, and full-stack development ability to ship rather than just prototype.",
+    "target_roles": ["AI/ML Engineer", "Data Analyst", "Data Scientist (fresher)", "AI-augmented Data Analyst", "Generative AI Engineer (entry-level)"],
+    "target_locations": ["Delhi NCR", "Gurugram", "Noida", "Dehradun", "Remote"]
+  },
+  "market_positioning_notes": {
+    "source_basis": "2026 India AI/ML and Data Analyst hiring research (multiple industry sources, synthesized)",
+    "key_findings": [
+      "Python appears in nearly all AI-adjacent job descriptions across role types — treated as non-negotiable.",
+      "Generative AI, RAG, and prompting skills are increasingly named explicitly even in Data Analyst postings, not just AI Engineer roles.",
+      "'Data Analyst with AI skills' is one of the most accessible, fastest-growing fresher entry points into the broader AI/ML career track.",
+      "Firms are prioritizing the ability to move data and models into production (data engineering, MLOps awareness), not just analyze in isolation.",
+      "A genuine, demonstrable project portfolio is repeatedly cited as the differentiator between freshers who get hired and those who don't."
+    ],
+    "how_this_portfolio_responds": "Every project pairs core Python/SQL/analysis work with an applied GenAI layer, and is shipped as a working artifact (app, dashboard, or working code) rather than left as an isolated notebook or slide."
+  },
+  "summary": "M.Sc. Data Science graduate with 6 months of experience in data analysis, NLP, and machine learning. Skilled in Python, SQL, and Power BI for data processing, visualization, and model development. Hands-on experience building offline AI systems, fine-tuning transformer-based models, shipping full-stack AI products, and running performance-marketing campaigns for a real small-business client.",
+  "skills": {
+    "languages_and_analysis": ["Data Analytics", "Excel", "Python", "SQL", "Pandas", "NumPy", "C++", "A/B Testing"],
+    "ml_and_generative_ai": ["Scikit-learn", "TensorFlow", "BERT fine-tuning", "Knowledge Distillation", "RAG", "Prompt Engineering", "Anthropic API", "OpenAI API"],
+    "bi_data_and_cloud": ["Power BI", "MySQL", "BigQuery", "ETL Pipelines", "AWS", "GCP"],
+    "development": ["Next.js", "React", "FastAPI", "Flutter", "Firebase", "MongoDB", "Vercel", "REST APIs"],
+    "performance_marketing": ["GA4", "Google Ads (certified)", "Meta Ads fundamentals", "SEO basics", "Funnel & campaign reporting"]
+  },
+  "projects": [
+    {
+      "id": "insightsql",
+      "name": "InsightSQL — Natural-Language-to-SQL Analyst Assistant",
+      "type": "NEW — built for this portfolio",
+      "category": "AI/ML + Data Analytics",
+      "problem": "Non-technical business owners can't write SQL, so insights sit locked in databases until someone manually queries them.",
+      "solution": "An assistant that takes a plain-English business question, has an LLM generate the SQL against an explicit schema, executes it read-only against a real SQLite database, and returns both the result table and a plain-language insight summary.",
+      "context_note": "Schema modeled on a local sales-and-service business (AC sales, installation, AMC contracts) — the same domain as the AM Enterprises freelance project.",
+      "tech_stack": ["Python", "SQLite", "Anthropic API", "Two-stage prompting"],
+      "safety_design": "Model output is restricted to SELECT statements; execution layer hard-rejects any non-SELECT SQL before touching the database.",
+      "status": "Working CLI demo — code delivered alongside this portfolio.",
+      "roadmap": ["FastAPI + Streamlit front end", "Auto-selected charting based on result shape", "Point at real AM Enterprises order data once integrated"],
+      "code_link": "ACTION_REQUIRED: push insightsql/ to GitHub and add repo URL",
+      "demo_link": "ACTION_REQUIRED: add live demo link if deployed"
+    },
+    {
+      "id": "friday",
+      "name": "Friday — Adaptive Offline AI Assistant Framework",
+      "type": "M.Sc. Thesis / Research",
+      "category": "Edge AI / Offline LLM",
+      "problem": "Cloud-dependent LLMs are unusable in privacy-sensitive or low-connectivity environments; running full-size models on resource-constrained devices is impractical.",
+      "solution": "An adaptive multi-tier framework that dynamically selects among distilled models based on task complexity and device constraints, enabling low-latency, privacy-preserving offline AI inference without cloud dependency.",
+      "tech_stack": ["Python", "NLP pipelines", "Knowledge distillation", "Edge deployment"],
+      "status": "Published research; prototype offline chatbot built and demonstrated.",
+      "code_link": "ACTION_REQUIRED: add thesis/repo link"
+    },
+    {
+      "id": "ai-resume-analyzer",
+      "name": "AI Resume Analyzer",
+      "type": "Full-Stack AI App",
+      "category": "Applied GenAI / Full-Stack",
+      "problem": "Recruiters and applicants both need fast, structured extraction from unstructured resume text.",
+      "solution": "A full-stack web app using the Anthropic API to parse and analyze resumes; built specifically to pair full-stack JavaScript ability with the AI/ML skillset.",
+      "tech_stack": ["Next.js", "Anthropic API", "MongoDB", "Vercel"],
+      "status": "Deployed and demonstrable live.",
+      "code_link": "ACTION_REQUIRED: add GitHub repo URL",
+      "demo_link": "ACTION_REQUIRED: add live deployed URL"
+    },
+    {
+      "id": "ecommerce-sales-analysis",
+      "name": "E-Commerce Sales Performance Dashboard",
+      "type": "Data Analytics & BI",
+      "category": "Data Analyst",
+      "problem": "A transactional e-commerce dataset with no clear view into which customers are valuable or where sales trends are heading.",
+      "solution": "EDA to surface sales and behavior patterns, RFM segmentation to classify customers for targeted marketing, and an interactive Power BI dashboard for stakeholder decision-making.",
+      "tech_stack": ["Excel", "Python", "SQL", "Power BI", "RFM segmentation"],
+      "status": "Complete project.",
+      "code_link": "ACTION_REQUIRED: add dashboard/GitHub link"
+    }
+  ],
+  "freelance_and_client_work": [
+    {
+      "id": "am-enterprises",
+      "client": "AM Enterprises",
+      "industry": "Air conditioner sales & service (local business)",
+      "engagement_status": "Real, ongoing client relationship",
+      "work_delivered": "Built a React single-page website to establish the business's first real online presence.",
+      "in_progress": "In talks with the client to expand the site with new features and add paid performance marketing to drive local leads.",
+      "growth_plan_illustrative": {
+        "disclaimer": "The following figures are illustrative planning estimates for portfolio demonstration — the paid campaign is not yet live and these are NOT real results.",
+        "funnel": "Google Ads (search intent: 'AC service near me', 'AC installation [city]') -> landing page on the new site -> WhatsApp/call CTA -> booking",
+        "simulated_projections": {
+          "monthly_budget_inr": 15000,
+          "estimated_cpc_inr_range": "15-25",
+          "estimated_daily_clicks_range": "40-60",
+          "illustrative_landing_page_conversion_pct_range": "8-12"
+        },
+        "planned_dashboard": "Weekly Power BI report tracking spend, leads, cost-per-lead, and booked jobs by channel (Google Ads / Meta Ads / Organic) once the campaign goes live."
+      },
+      "tech_stack": ["React"]
+    },
+    {
+      "id": "ansari-store",
+      "client": "Ansari Store (local grocery business)",
+      "engagement_status": "Real client work — sole developer",
+      "work_delivered": "Flutter + Firebase mobile ordering app giving the business an online ordering and delivery presence.",
+      "tech_stack": ["Flutter", "Firebase"]
+    }
+  ],
+  "performance_marketing": {
+    "rationale": "Treated as a second lens on the same core data skillset — paid-acquisition campaign management is fundamentally an analytics problem (spend, conversion, CAC, LTV), and it's the layer that makes an AI/ML project commercially useful to a small business.",
+    "certifications": ["Google Ads Search Certification (Google Skillshop)"],
+    "in_progress": ["GA4 fundamentals"],
+    "applied_work": "AM Enterprises growth plan (see freelance_and_client_work).",
+    "simulation_case_studies_note": "Dedicated marketing portfolio site includes case studies (Google Ads campaign for a local grocery business, SEO growth audit, marketing performance dashboard) explicitly labeled as educational/simulated portfolio work, not real client campaigns."
+  },
+  "development": {
+    "rationale": "Every AI/ML or analysis project in this portfolio is wrapped in a real shipped application rather than left as a notebook — matching 2026 hiring signals that firms need people who can move data and models into production.",
+    "full_stack_web": ["Next.js", "React", "FastAPI", "MongoDB", "Vercel"],
+    "mobile": ["Flutter", "Firebase"],
+    "ai_integration": "Anthropic API integration built into production features, not just experimentation.",
+    "currently_deepening": ["MLOps basics (Docker, model deployment)", "Cloud (AWS/GCP)"]
+  },
+  "experience": [
+    {
+      "role": "Junior Data Scientist Intern",
+      "org": "Insignia Consultancy Solutions",
+      "location": "Remote",
+      "dates": "Jul 2024 - Dec 2024",
+      "highlights": [
+        "Performed data annotation and preprocessing to build high-quality labeled datasets for model training.",
+        "Conducted EDA in Python to identify patterns and support data-driven reporting.",
+        "Built dashboards and reports to visualize key insights for stakeholders.",
+        "Fine-tuned BERT-based transformer models for resume entity extraction."
+      ]
+    },
+    {
+      "role": "Research Scholar",
+      "org": "Graphic Era University, Dehradun",
+      "dates": "Jul 2023 - Jun 2025",
+      "highlights": [
+        "Researched LLM deployment on resource-constrained edge devices for offline AI systems.",
+        "Designed an adaptive multi-tier framework for dynamic model selection.",
+        "Implemented knowledge distillation for efficient, low-latency, cloud-free inference.",
+        "Developed a privacy-preserving offline AI chatbot prototype."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "M.Sc. Data Science & Statistics",
+      "institution": "Graphic Era University, Dehradun",
+      "dates": "Jul 2023 - Jun 2025",
+      "grade": "CGPA 8.19/10.0"
+    },
+    {
+      "degree": "B.Sc. Information Technology",
+      "institution": "HNB Garhwal University",
+      "dates": "Jul 2020 - Jun 2023",
+      "grade": "First Class"
+    }
+  ],
+  "certifications": [
+    "Google Cloud Data Analytics Professional Certificate — Coursera (2025)",
+    "IBM Generative AI for Data Scientists — IBM/Coursera (2024)",
+    "Google Ads Search Certification — Google Skillshop",
+    "Python for Data Science — Coursera"
+  ],
+  "usage_prompts": {
+    "resume_tailoring_system_prompt": "You are helping tailor Akib Ansari's resume to a specific job description. Use ONLY the facts in this JSON (summary, skills, projects, freelance_and_client_work, experience, education, certifications). Prioritize the 2-3 projects and skills most relevant to the target job description. Never invent metrics, employers, or dates not present in this file. Keep all simulated/illustrative figures clearly labeled as such if included.",
+    "portfolio_chatbot_system_prompt": "You are a portfolio assistant answering recruiter/visitor questions about Akib Ansari on his behalf, using ONLY the facts in this JSON. Be direct and results-oriented in tone. If asked about something not covered here, say you don't have that detail rather than guessing. Always disclose that AM Enterprises growth-plan figures are illustrative projections, not live results, if that project comes up.",
+    "cover_letter_system_prompt": "Write a concise, direct, results-oriented cover letter for Akib Ansari using ONLY facts from this JSON, tailored to the job description provided by the user. Lead with the 1-2 most relevant projects or experience items. No generic filler language."
+  }
+}

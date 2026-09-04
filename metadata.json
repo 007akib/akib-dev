@@ -1,0 +1,6 @@
+{
+  "name": "Akib Ansari Portfolio",
+  "description": "Interactive portfolio website for Akib Ansari, AI/ML Engineer & Data Analyst.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

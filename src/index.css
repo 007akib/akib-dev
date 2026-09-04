@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  --font-heading: "Space Grotesk", sans-serif;
+  
+  --color-primary-base: #0A0F1A;
+  --color-primary-dark: #070B13;
+  --color-primary-light: #0F2A43;
+  
+  --color-accent-teal: #0E7C7B;
+  --color-accent-cyan: #14E0C4;
+}
+
+@layer base {
+  body {
+    @apply bg-primary-base text-gray-200 font-sans antialiased selection:bg-accent-teal/30;
+    background-image: radial-gradient(circle at 15% 50%, rgba(14, 124, 123, 0.08) 0%, transparent 40%),
+                      radial-gradient(circle at 85% 30%, rgba(20, 224, 196, 0.05) 0%, transparent 40%);
+    background-attachment: fixed;
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-primary-base/40 backdrop-blur-xl border border-white/10 shadow-[0_8px_32px_rgba(0,0,0,0.5)];
+  }
+  .glass-card {
+    @apply bg-primary-base/40 backdrop-blur-xl border border-white/10 shadow-[0_8px_32px_rgba(0,0,0,0.5)] transition-all duration-500 hover:border-accent-cyan/40 hover:bg-primary-base/60 hover:shadow-[0_0_25px_rgba(20,224,196,0.15)] hover:-translate-y-1 relative overflow-hidden;
+  }
+  .glass-card::before {
+    content: "";
+    @apply absolute inset-0 bg-gradient-to-br from-white/5 to-transparent opacity-0 transition-opacity duration-500 pointer-events-none;
+  }
+  .glass-card:hover::before {
+    @apply opacity-100;
+  }
+  .glass-panel {
+    @apply bg-primary-dark/60 backdrop-blur-md border border-white/5 shadow-inner;
+  }
+}
+
